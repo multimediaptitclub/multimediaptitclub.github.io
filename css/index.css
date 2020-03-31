@@ -20,7 +20,6 @@ header .cover-image{
 	background-image: url("../images/cover.png");
 	background-size: cover; background-position: center;
 	height: 95vh;
-	margin-top: 10vh;
 }
 header .content h1{
 	color: #2F4A99;
