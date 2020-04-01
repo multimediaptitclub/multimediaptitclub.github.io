@@ -2,12 +2,13 @@
 *{
 	font-family: Roboto, Arial, sans-serif;
 }
-nav.navbar{
+nav{
 	position: fixed;
-	top:0;
+	top: 0px;
 	width: 100%;
-	z-index:3;
+	z-index:10;
 	background: white;
+	transition: all 1.5s;
 }
 nav img{
 	width: 4em;
@@ -16,16 +17,38 @@ nav ul{
 	display: flex;
 	justify-content: flex-end;
 }
+header{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: -1;
+}
 header .cover-image{
 	background-image: url("../images/cover.png");
 	background-size: cover; background-position: center;
 	height: 95vh;
+	z-index: -1;
 }
-header .content h1{
+div.main-content{
+	padding-top: 3em;
+	background: white;
+	z-index: 5;
+	margin-top:95vh;
+	margin-bottom: 0;
+	padding-bottom: 3em;
+}
+.main-content .content h1{
 	color: #2F4A99;
 }
-header .content p{
+.main-content .content h2{
+	color: #2F4A99;
+	font-size: 1.6em;font-weight: 400;
+}
+.main-content .content p,li{
 	font-weight: 300;
+}
+.main-content .content p{
+	margin-top: 1em;
 }
 
 .btn-primary{
@@ -33,6 +56,31 @@ header .content p{
 	height: 3em; width: 7em;
 }
 footer{
-
+	background: white;
+	margin-top: 0;
+	padding: 3em 0 1em 0;
 	font-weight: lighter;
+	z-index: 5;
+	font-size: 1em;
+    display: flex;
+    flex-direction: row; align-items: baseline;
+    background: rgb(27, 41, 100); color: white;
+}
+.footer-info h1,.footer-info p{
+	font-size: 1em;
+	margin: 0px;padding:0px;
+}
+footer hr{
+	border-color: white;
+}
+/*navbar animation*/
+.navbarplus{
+	position: fixed;
+	top: 0px;
+	transition: all 0.8s;
+}
+.navbarminus{
+	position: fixed;
+	top:-80px;
+	transition: all 0.8s;
 }
